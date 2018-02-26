@@ -1,0 +1,10 @@
+%% 4.1 Sampling a Photographic Image and Observe Aliasing
+lighthouse = imread('lighthouse.png');
+lighthouse_downsized = lighthouse(1:2:end, 1:2:end, :);
+
+show_img(lighthouse);
+trusize; % This will be 
+show_img(lighthouse_downsized);
+trusize;
+
+
