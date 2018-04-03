@@ -1,0 +1,11 @@
+bb = hamming(99);
+figure;
+ww = -pi:(pi/100):pi;
+H = freqz(bb, 1, ww);
+subplot(2,1,1);
+plot(ww, abs(H)), grid on;
+title('Magnitude Response');
+subplot(2,1,2);
+plot(ww, angle(H)), grid on;
+xlabel('Normalized Radian Frequency');
+title('Phase Response');
